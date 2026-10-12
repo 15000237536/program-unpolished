@@ -1,85 +1,25 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>校园事项管理平台</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>待办事项清单</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="top-bar">
-    <div class="logo">校园事项门户</div>
-    <nav>
-      <button class="nav-btn active" data-filter="all">全部</button>
-      <button class="nav-btn" data-filter="学习任务">学习</button>
-      <button class="nav-btn" data-filter="实践/实习">实践/实习</button>
-      <button class="nav-btn" data-filter="招募/活动">招募/活动</button>
-      <button class="nav-btn" data-filter="学生服务">学生服务</button>
-      <button class="nav-btn" data-filter="安全提醒">安全</button>
-      <button class="nav-btn" data-filter="其他">其他</button>
-    </nav>
-  </header>
-
-  <main>
-    <aside class="side-panel">
-      <div class="widget">
-        <h3>待办总览</h3>
-        <ul>
-          <li>总事项：<span id="totalCount">0</span></li>
-          <li>未完成：<span id="pendingCount">0</span></li>
-          <li>已完成：<span id="doneCount">0</span></li>
-        </ul>
-      </div>
-      <div class="widget">
-        <h3>提醒设置</h3>
-        <p>点击卡片上的 <strong>🔔</strong> 可选择提前 1 天/3 小时/30 分钟提醒。</p>
-      </div>
-      <div class="widget">
-        <h3>自定义筛选</h3>
-        <label>关键词</label>
-        <input type="text" id="searchInput" placeholder="输入标题或标签" />
-        <label>DDL状态</label>
-        <select id="ddlFilter">
-          <option value="all">全部</option>
-          <option value="has">有DDL</option>
-          <option value="none">无DDL</option>
-        </select>
-        <label>紧急程度</label>
-        <select id="urgencyFilter">
-          <option value="all">全部</option>
-          <option value="高">高</option>
-          <option value="中">中</option>
-          <option value="低">低</option>
-          <option value="待定">待定</option>
-        </select>
-      </div>
-    </aside>
-
-    <section class="card-grid" id="cardGrid">
-      <!-- JS 动态注入卡片 -->
-    </section>
-  </main>
-
-  <div id="reminderModal" class="modal hidden">
-    <div class="modal-content">
-      <h3>设置提醒</h3>
-      <p id="modalTitle"></p>
-      <label>
-        提前
-        <select id="reminderSelect">
-          <option value="1440">1 天</option>
-          <option value="180">3 小时</option>
-          <option value="30">30 分钟</option>
-        </select>
-        提醒
-      </label>
-      <div class="modal-actions">
-        <button id="saveReminder">保存</button>
-        <button id="cancelReminder">取消</button>
-      </div>
+    <h1>待办事项清单</h1>
+    <h2>[临期]</h2>
+    <p>填写《不购买回执单》</p >
+    <p>打印心理期末作业：500-1000字感悟心得
+    </p >
+    <p>提交时间：8.14</p >
     </div>
-  </div>
 
-  <script src="app.js"></script>
-</body>
-</html>
+    <h2>[普通任务]</h2>
+    <p>准备综合英语pre</p >
+    <p>截止时间：11.13</p >
+    <h2>[资源整理】</h2>
+    <p>css学习网站
+        <a href=" https://xingyezn.github.io/web-lab/#/lesson/css-01" >练习css</a >
+    </p >
